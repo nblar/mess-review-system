@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background: lightblue;
+
+        }
+        #content {
+            text-align: center;
+            text-shadow: 8px 4px 3px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-family: cursive;
+        }
+
+        form {
+            margin-left: 25%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <form action="staffSignUp" method="POST" id="2" >
+            <div class="col-lg-8">
+                <div class="form-group ">
+                    <div id="content">
+                        <h1>Sign Up</h1>
+
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group " role="group">
+                                <button type="button" class="btn btn-success" style="font-family: cursive;"
+                                    id="btnclick1" onclick="location.href='SignUpStudent.html';"><b>STUDENT</b></button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-success " style="font-family: cursive;"
+                                    id="btnclick2" onclick="location.href='SignUpStaff.html';"><b>STAFF</b></button>
+                            </div>
+
+                        </div>
+                        <hr>
+                    </div>
+                    <label for="staffid">Staff Id:</label>
+                    <input type="text" class="form-control" name="staffid" id="staffid" placeholder="1EM16" required>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name"
+                        required>
+                    <label for="middleman">Middle Name:</label>
+                    <input type="text" class="form-control" name="middlename" id="middleman" placeholder="Middle Name">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@gmail.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <input type="text" class="form-control" name="salary" id="salary" placeholder="30000" required>
+                </div>
+                <div class="form-group">
+                    <div class="form-inline">
+                        <label for="House-no">House No:</label>
+                        <input type="text" class="form-control" name="houseno" id="houseno" placeholder="201" required>
+                        <label for="pincode">Pincode:</label>
+                        <input type="text" class="form-control" name="pincode" id="pincode" placeholder="569001"
+                            required>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Streetname">Streetname:</label>
+                    <input type="text" class="form-control" name="streetname" id="streetname"
+                        placeholder="Shalimar Garden Extn-1 " required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No:</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="example:989105693"
+                        required>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label for="terms">
+                            <input type="checkbox" id="terms" required>
+                            <b>I agree to the terms and conditions</b>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-md btn-primary btn-block"><b>Submit</b></button>
+                <button type="btn" class="btn btn-md btn-success btn-block"
+                    onclick="location.href='login.html';"><b>Already
+                        have an account?Sign in</b></button>
+            </div>
+    </div>
+    </form>
+</div>
+</body>

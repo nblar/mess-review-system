@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(Cafeteria-tables.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;;
+        }
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        #log {
+            margin: 200px auto;
+            width: 350px;
+            text-shadow: 8px 4px 3px rgba(255, 255, 255, 0.2);
+        }
+        #login {
+            padding: 10px;
+        }
+        .btn-success {
+            padding: 5px;
+        }
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+        .avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="loginhoja" method="POST" id="log">
+        <div class="form-group bg-light" id="login">
+           
+            <div class="imgcontainer">
+                <img src="https://image.flaticon.com/icons/svg/236/236832.svg" alt="avatar" class="avatar">
+            </div>
+            <label for="username"><b>Username</b></label>
+            <input type="text" class="form-control bg-light" id="username" placeholder="USN" name="username" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" class="form-control bg-light" id="password" placeholder="********" name="password" required>
+            <div class="form-inline my-3 ">
+                    <button type="submit" class="mx-auto btn btn-lg btn-success">LOGIN</button>
+             </div>
+              <div class="form-inline">
+                    <button type="button" class="btn btn-info btn-block" onclick="location.href='login-staff.html';">Login As Staff?</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
